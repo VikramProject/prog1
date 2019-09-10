@@ -33,7 +33,7 @@ class Color {
                 this.r = r; this.g = g; this.b = b; this.a = a; 
             }
         } // end throw
-        
+        //
         catch (e) {
             console.log(e);
         }
