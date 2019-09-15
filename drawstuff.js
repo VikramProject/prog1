@@ -495,7 +495,7 @@ function main() {
     
     drawInputBoxesUsingPaths(context);
 	// shows how to draw pixels and read input file
-    
+    //
 	//drawInputBoxesUsingPaths(context);
     // shows how to read input file, but not how to draw pixels
 }
