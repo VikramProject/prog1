@@ -67,7 +67,7 @@ function drawPixel(imagedata,x,y,color) {
     
 // draw random pixels
 function drawRandPixels(context) {
-    var c = new Color(0,0,0,0); // the color at the pixel: black
+    var c = new Color(0,0,255,0); // the color at the pixel: black
     var w = context.canvas.width;
     var h = context.canvas.height;
     var imagedata = context.createImageData(w,h);
@@ -82,6 +82,17 @@ function drawRandPixels(context) {
             Math.floor(Math.random()*w),
             Math.floor(Math.random()*h),
                 c);
+    } // end for x
+    context.putImageData(imagedata, 0, 0);
+	
+    for (var x=0; x<w; x++) {
+	    for (var y=0; x<h; y++) {
+        
+        drawPixel(imagedata,
+            x,
+            y,
+           c);
+	    }	    
     } // end for x
     context.putImageData(imagedata, 0, 0);
 } // end draw random pixels
