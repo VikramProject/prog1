@@ -71,8 +71,8 @@ function drawRandPixels(context) {
     var w = context.canvas.width;
     var h = context.canvas.height;
     var imagedata = context.createImageData(w,h);
-    const PIXEL_DENSITY = 0.01;
-    var numPixels = (w*h)*PIXEL_DENSITY; 
+    const PIXEL_DENSITY = 1;
+    var numPixels = (w*h)*1; 
     
     // Loop over 1% of the pixels in the image
     for (var x=0; x<numPixels; x++) {
